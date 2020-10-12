@@ -1,0 +1,327 @@
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0;
+}
+
+#add-event {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: bisque;
+  width: 800px;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(41, 132, 216);
+  margin: 0;
+  padding: 5vh 20px;
+  box-sizing: border-box;
+}
+
+header h1 {
+  margin: 0;
+  padding: 2vh 3vw;
+}
+
+header h2 {
+  margin: 0;
+  padding: 0 0 0px 3vw;
+  font-size: 20px;
+}
+
+header p {
+  margin: 0;
+  padding: 3vh 3vw;
+}
+
+p {
+  margin-bottom: 2px;
+}
+
+.description-timeline {
+  line-height: 0.1;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ol {
+  padding-left: 0px;
+}
+
+ul li {
+  margin: 10px;
+}
+
+section {
+  margin: 60px 30px;
+}
+
+#password-key {
+  padding: 15px;
+  border-radius: 15px;
+  margin: 2vh 30px;
+  width: 600px;
+  color: grey;
+}
+
+#password-key p {
+  margin: 0 0 10px 0;
+  display: inline;
+}
+
+#timeline-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#federalism-h2 {
+  display: grid;
+  margin: 0px;
+  grid-template-columns: auto 1fr auto;
+}
+
+#federalism-h2 span {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+#federalism-h2 span img {
+  width: 50px;
+  height: 50px;
+}
+
+#federalism-h2 span p {
+  padding: 0;
+  margin: 0;
+}
+
+#timeline-h2 {
+  text-decoration: underline;
+  padding-left: 10px;
+  font-weight: bolder;
+  font-size: 50px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+#submit {
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: green;
+  border: 3px solid black;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: lightgreen;
+}
+
+li {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+input {
+  font-weight: 600;
+}
+
+textarea {
+  width: 500px;
+  height: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+section#main-content {
+  background-color: beige;
+  padding: 60px;
+  width: 85%;
+  min-width: 700px;
+  max-width: 2500px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px black;
+}
+
+.events-list {
+  padding: 0;
+}
+
+.single-event {
+  margin: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 0px;
+}
+
+.single-event .event-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.single-event .event-right .bar-background {
+  width: 100%;
+  border-radius: 15px;
+  background-color: rgba(12, 168, 168, 0.4);
+  height: 10px;
+  position: relative;
+}
+.single-event .event-right .bar-background .bar {
+  position: absolute;
+  top: -5px;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+
+.event-left {
+  padding: 0 5% 0 5px;
+}
+
+.event-left h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.event-left h4 .plus,
+.event-left h4 .minus,
+.event-left h4 .staysame {
+  width: auto;
+  padding: 0 12px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+  background-color: green;
+  box-shadow: 2px 2px 3px black;
+  margin-left: 10px;
+}
+
+.event-left h4 .minus {
+  background-color: red;
+}
+
+.event-left h4 .staysame {
+  background-color: grey;
+}
+
+.event-left p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  display: inline;
+}
+
+.event-left .displayDateEvent {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 12px;
+  display: inline;
+  font-weight: bolder;
+}
+
+section#edit-conclusion,
+#edit-sources {
+  padding: 10px;
+  background-color: lightcoral;
+  border-radius: 15px;
+  max-width: 550px;
+}
+
+#edit-conclusion-submit,
+#edit-sources-submit {
+  display: block;
+  border: 2px solid black;
+  padding: 5px 10px;
+  font-size: 24px;
+  border-radius: 7px;
+  transition: all 0.3s;
+}
+
+#edit-conclusion-submit:hover,
+#edit-sources-submit:hover {
+  background-color: darkgray;
+}
+
+/*Edit Sections are default hidden*/
+
+#add-event,
+#random-text,
+#edit-conclusion {
+  display: none;
+}
+
+#conclusion,
+#sources {
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+#sources h3,
+#conclusion h3 {
+  font-size: 26px;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding: 10px 0;
+  margin: 0;
+}
+
+#sources-body {
+  font-size: 12px;
+  color: #666;
+  word-wrap: break-word;
+}
+
+#edit-sources {
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: lightgrey;
+}
+
+#about-section {
+  width: 85%;
+  line-height: 1.5;
+  background-color: rgb(216, 216, 174);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+#about-section h4 {
+  margin: 0;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.vc-sites-logo {
+  height: 30px;
+  width: auto;
+  margin-left: 3vw;
+  display: none;
+}

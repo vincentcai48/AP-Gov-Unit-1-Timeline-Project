@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AP Gov Timeline Project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="federal.png" type="image/png" />
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>AP Gov Federalism Timeline</h1>
+      <h2>
+        By Vinny Cai, Saad Khan, Ellie Boyd, Charlie Greenwood and Natalie
+        Hagerty
+      </h2>
+      <p>For Mr. Swanson's Period 3 AP Gov Class</p>
+      <img class="vc-sites-logo" src="images/vc-sites-logo-textdark.png" />
+    </header>
+
+    <div id="password-key">
+      <p>To Add to the timeline, enter the key:</p>
+      <input type="password" placeholder="Enter Key" id="key-input" />
+    </div>
+
+    <section id="add-event">
+      <h2>Add an Event</h2>
+      <form id="form">
+        <ul>
+          <li>
+            <input type="text" id="event-name" placeholder="Event Name" />
+          </li>
+          <li>
+            <textarea
+              type="text"
+              placeholder="Description"
+              id="event-description"
+            ></textarea>
+          </li>
+          <li>
+            <p>
+              FEDERALISM SCORE: On a Scale of -5 to 5. -5 for drastically
+              decreaing federal power, 5 for drastically increasing, and
+              everywhere between.
+            </p>
+            <input type="number" max="5" min="-5" id="federalismScore" />
+          </li>
+          <li>
+            <p>
+              DATE: Just for the program to order in chronology. If no exact
+              date, just give an estimate so it will show up in order.
+            </p>
+            <input type="date" id="date" />
+          </li>
+          <li>
+            <p>
+              DISPLAY DATE: What will be displayed as the date. Can be any text:
+              a day, year, year range, etc...
+            </p>
+            <input type="text" id="displayDate" />
+          </li>
+          <li><button type="button" id="submit">SUBMIT</button></li>
+        </ul>
+      </form>
+    </section>
+
+    <section id="edit-conclusion">
+      <form>
+        <h4>Edit Conclusion</h4>
+        <textarea id="edit-conclusion-textarea"></textarea>
+        <button id="edit-conclusion-submit" type="button">Submit</button>
+      </form>
+    </section>
+
+    <div style="margin-left: 50px" id="random-text">
+      Below is the timeline where all your entered events appear. <br />-Vinny
+      Cai
+      <form id="edit-sources">
+        <h4>Edit Sources</h4>
+        <textarea id="edit-sources-textarea"></textarea>
+        <button id="edit-sources-submit" type="button">Submit</button>
+      </form>
+    </div>
+
+    <section id="about-section">
+      <h4>About this Timeline</h4>
+      <p>
+        This is a timeline of 50 notable events in US history that changed the
+        dynamic of American Federalism, through a constant push and pull of
+        power between the federal government and the state and local
+        governments. Each event is listed in chronological order on the left,
+        with the title, date, and description. On the right is the relative
+        amount of federal power up to that point in time. The amounts are
+        cumulative; the dot will move a little futher to the right of the one
+        above it if it increases federal power, and a little to the left if it
+        decreases federal power. Enjoy this nice visual timeline!
+      </p>
+    </section>
+
+    <section id="main-content">
+      <div id="timeline-header">
+        <h2 id="timeline-h2">TIMELINE:</h2>
+        <h2 id="federalism-h2">
+          <span
+            ><img src="./states.png" />
+            <p>State Power</p></span
+          >
+          <div></div>
+          <span
+            ><img src="./federal.png" />
+            <p>Federal Power</p></span
+          >
+        </h2>
+      </div>
+      <ol id="events-list"></ol>
+    </section>
+
+    <script></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
